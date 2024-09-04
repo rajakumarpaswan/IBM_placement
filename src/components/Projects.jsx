@@ -7,10 +7,11 @@ const buttons = ["add projects","view import logs"]
 
 function Projects() {
   return (
-    <div>
-        <div className="flex">
-            <Main/>
-            <div className="project-section w-full">
+    <div className="relative">
+         <Main/>
+        <div className="absolute left-64 ">
+           
+            <div className="project-section w-full ">
             <nav className="p-3 flex justify-between items-center border-b-[1px]">
             <ul className="flex gap-5  ">
               <li>
@@ -20,7 +21,7 @@ function Projects() {
                 <IconChevronRight />
               </li>
               <li>
-                <p>dashboard</p>
+                <p>projects</p>
               </li>
             </ul>
             <ul>

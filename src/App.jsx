@@ -7,22 +7,32 @@ import { createBrowserRouter } from 'react-router-dom'
 import Main from './components/Main'
 import Dashboard from './components/Dashboard'
 import Projects from './components/Projects'
-// import Navbar from './components/Navbar'
-// import Projects from './components/Projects'
-// import Experience from './components/Experience'
-// import Skills from './components/Skills'
-// import Contact from './components/Contact'
-// import DemoTabs from './components/DemoTabs'
-// import { MantineProvider } from '@mantine/core'
+import Integration from './components/Integration'
+import Members from './components/Members'
+import Home from './components/homepage/Home'
+import Login from './components/homepage/Login'
+import Signup from './components/homepage/Signup'
+
 
 
 const App = createBrowserRouter(
   
   
   [
-  
+    {
+      path:"/",
+      element:<Home/>
+    },
+    {
+      path:"/login",
+      element:<Login/>
+    },
+    {
+      path:"/signup",
+      element:<Signup/>
+    },
   {
-  path:"/",
+  path:"/main",
   element:<Main/>
 },
 {
@@ -32,6 +42,14 @@ const App = createBrowserRouter(
 {
   path:"/projects",
   element:<Projects/>
+},
+{
+  path:"/integrations",
+  element:<Integration/>
+},
+{
+  path:"/members",
+  element:<Members/>
 },
 
 ])

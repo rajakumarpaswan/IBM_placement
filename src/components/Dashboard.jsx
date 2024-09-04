@@ -12,11 +12,13 @@ import { Button } from "@mantine/core";
 
 function Dashboard() {
   return (
-    <div>
-      <div className="flex">
+    <div className="relative">
         <Main />
-        <div className="rightsection w-full">
-          <nav className="p-3">
+      <div className="absolute left-64 w-4/5   ">
+        
+        <div className="rightsection  ">
+          {/* navbar section */}
+          <nav className="p-3 border-b-[1px]">
             <ul className="flex gap-5  ">
               <li>
                 <p>21137003</p>
@@ -29,8 +31,9 @@ function Dashboard() {
               </li>
             </ul>
           </nav>
-          <hr />
-          <div className="border-[1px] m-5 p-3 rounded-lg">
+          {/* navbar ends */}
+         
+          <div className="border-[1px] m-5 p-3 rounded-lg ">
             <div className="connect-code">
               <h2>Start securing your code</h2>
               <span className="flex">

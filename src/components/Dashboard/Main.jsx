@@ -11,6 +11,7 @@ import {
 } from "@tabler/icons-react";
 import { useDisclosure } from "@mantine/hooks";
 import { Burger } from "@mantine/core";
+import Profile from "./Profile";
 
 const links = [
   { name: "dashboard", icon: <IconHome /> },
@@ -21,7 +22,9 @@ const links = [
 ];
 
 function Main() {
-  const [opened, { toggle }] = useDisclosure();
+  // const [opened, { toggle }] = useDisclosure();
+  const [opened, { open, close }] = useDisclosure(false);
+
 
   return (
     <div className="">
@@ -32,10 +35,8 @@ function Main() {
             <p className="text-lg font-bold">CodeReviewer</p>
           </span>
           <span>
-            <Burger
-              opened={opened}
-              onClick={toggle}
-              aria-label="Toggle navigation"
+            <Burger color="#FFFFFF"
+              
             />
           </span>
         </div>
@@ -78,8 +79,10 @@ function Main() {
             </div>
 
             <span className="iconwala text-white">
-              <IconCaretDown />
+              <IconCaretDown onClick={open} />
             </span>
+
+            <Profile opened={opened} close={close}/>
           </div>
         </div>
       </div>

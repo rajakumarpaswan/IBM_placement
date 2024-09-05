@@ -20,7 +20,7 @@ function Banner() {
          
         </div>
         <div className="buttons absolute top-[70%] left-[40%] flex gap-7">
-            <a href="" className="bg-blue-600 rounded-full text-white flex text-xl pb-2 pt-2 pl-6 pr-6"><IconRocket/>get started</a>
+            <a href="" className="bg-blue-600 rounded-full text-white flex gap-2 items-center text-xl pb-2 pt-2 pl-6 pr-6 capitalize"><IconRocket/>get started</a>
             <a href="" className="bg-white rounded-full text-blue-700 text-xl pb-2 pt-2 pl-6 pr-6">How it works</a>
 
         </div>

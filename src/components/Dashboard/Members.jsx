@@ -2,7 +2,7 @@
 
 import { Button,Input,Table } from "@mantine/core"
 import Main from "./Main"
-import { IconChevronRight, IconFilter,IconLink,IconSearch, IconTrash,IconCaretUpDownFilled } from "@tabler/icons-react"
+import { IconChevronRight, IconFilter,IconLink,IconSearch, IconTrash } from "@tabler/icons-react"
 
 const elements = [
     {  name: 'Raja kumar paswan' ,auth :"goggle",role:"org admin", date_joined:"04 sep 2024" ,email:"rajakumar@gmial.com"},
